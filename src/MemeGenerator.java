@@ -13,6 +13,15 @@ public class MemeGenerator {
             System.out.println("Welcome to the Meme Generator Console App!");
             // Load the image from the file path provided by the user
             System.out.print("Enter the path of the image file: ");
+            // Example: "C:/Users/username/Desktop/image.png" (Windows)
+            // C:\Users\aronn\IdeaProjects\zzzLinksFolder\image.png
+            // or "/Users/username/Desktop/image.png" (Mac)
+            // or "C:\\Users\\username\\Desktop\\image.png" (Windows)
+            // or "/Users/username/Desktop/image.png" (Mac)
+            // or "image.png" (if the image is in the same directory as the program)
+            // or "src/image.png" (if the image is in the src directory of the program)
+            // or "resources/image.png" (if the image is in the resources directory of the program)
+
             String imagePath = userInput.nextLine();
             BufferedImage image = loadImage(imagePath); // Load the image
 
